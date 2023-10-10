@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Circulo
+comment0.text=\r\n\ Clase\ Circulo\r\n\ @author\ Velozo,\ Agustin\r\n\ @version\ 2\ 04/10/2023\r\n
+comment1.params=p_punto\ p_radio
+comment1.target=Circulo(Punto,\ double)
+comment1.text=\r\n\ Metodo\ constructor\ para\ instanciar\ objetos\ de\ la\ clase\ circulo\r\n\ @param\ Punto\ p_punto,\ double\ p_radio\r\n
+comment2.params=
+comment2.target=java.lang.String\ nombreFigura()
+comment2.text=\r\n\ @return\ Devuelve\ el\ nombre\ de\ la\ clase\r\n
+numComments=3
