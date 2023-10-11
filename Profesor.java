@@ -73,4 +73,34 @@ public class Profesor extends Persona {
     public void quitarCargo(Cargo p_cargo){
         this.getCargos().add(p_cargo);
     }
-}
+
+    /**
+    * Muestra los cargos que posee por pantalla
+    */
+    public void listarCargos(){
+        for(Cargo cargo : this.getCargos()){
+            cargo.mostrar();
+        }
+    }
+
+    /**
+    * Calcula el total de todos los sueldos segun sus cargos
+    * @return Devuelve la suma total de los sueldos como double
+    */
+    public double sueldoTotal(){
+        double total = 0;
+        for(Cargo cargo : this.getCargos()){
+            total += cargo.sueldoDelCargo();
+        }
+    }
+
+    public void mostrar(){
+        super.mostrar();
+        System.out.println("Titulo: " + this.getTitulo());
+        System.out.println("****** Cargos Asignados ******");
+        System.out.println("------------------------------");
+        this.listarCargos();
+        System.out.println("\n** Sueldo Total: " + this.sueldoTotal());
+    }
+
+    
