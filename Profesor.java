@@ -63,7 +63,9 @@ public class Profesor extends Persona {
      * @param Cargo p_cargo
      */
     public void agregarCargo(Cargo p_cargo){
-        this.getCargos().add(p_cargo);
+        if(this.getCargos().size() < 3){
+            this.getCargos().add(p_cargo);
+        }
     }
 
     /**
@@ -79,7 +81,7 @@ public class Profesor extends Persona {
     */
     public void listarCargos(){
         for(Cargo cargo : this.getCargos()){
-            cargo.mostrar();
+            cargo.mostrarCargo();
         }
     }
 
@@ -92,15 +94,20 @@ public class Profesor extends Persona {
         for(Cargo cargo : this.getCargos()){
             total += cargo.sueldoDelCargo();
         }
+        return total;
     }
 
     public void mostrar(){
+        System.out.println("\n-----------------------------------------------");
         super.mostrar();
         System.out.println("Titulo: " + this.getTitulo());
-        System.out.println("****** Cargos Asignados ******");
+        System.out.println("\n****** Cargos Asignados ******");
         System.out.println("------------------------------");
         this.listarCargos();
         System.out.println("\n** Sueldo Total: " + this.sueldoTotal());
     }
-
     
+    public String mostrarLinea(){
+        return "DNI: " + this.getNroDni() + " - Nombre: " + this.nomYApe() + " Sueldo Total: " + this.sueldoTotal();
+    }
+}

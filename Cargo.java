@@ -95,7 +95,7 @@ public class Cargo{
     }
 
     public void mostrarCargo(){
-        System.out.println(this.getNombreCargo() + " - Sueldo Basico: " + this.getSueldoBasico() + " - Sueldo Cargo: " + this.sueldoDelCargo() + " - Antiguedad: " + this.antiguedad() + " anios");
+        System.out.println("\n"+this.getNombreCargo() + " - Sueldo Basico: " + this.getSueldoBasico() + " - Sueldo Cargo: " + this.sueldoDelCargo() + " - Antiguedad: " + this.antiguedad() + " anios");
         System.out.println("Horas Docencia: " + this.getHorasDeDocencia());
     }
 

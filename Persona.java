@@ -84,7 +84,7 @@ public class Persona {
      * @return Devuelve un valor de tipo String
      * @throws No dispara ninguna excepcion
        */
-    public String nobmreYApe(){
+    public String nomYApe(){
         return (this.getNombre() + " " + this.getApellido());
     }
 
@@ -105,7 +105,7 @@ public class Persona {
      * @throws No dispara ninguna excepcion
        */
     public void mostrar(){
-        System.out.println("Nombre y Apellido: " + this.nobmreYApe());
+        System.out.println("Nombre y Apellido: " + this.nomYApe());
         System.out.println("DNI: " + this.getNroDni() + " Edad: " + this.edad() + " años");
     }
 

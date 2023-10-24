@@ -5,16 +5,14 @@
  */
 public class SemiExclusivo extends Cargo{
     private int horasDeInvestigacion;
-    private int horasDeExtension;
 
     /**
-     * Metodo constructor para instanciar objetos de la clase Exclusivo
-     * @param String p_nombreCargo, double p_sueldoBasico, int p_anioIngreso, int p_horasInvestigacion, int p_horasExtension
+     * Metodo constructor para instanciar objetos de la clase SemiExclusivo
+     * @param String p_nombreCargo, double p_sueldoBasico, int p_anioIngreso,int p_horasDocencia int p_horasInvestigacion
      */
-    public SemiExclusivo(String p_nombreCargo, double p_sueldoBasico, int p_anioIngreso, int p_horasInvestigacion, int p_horasExtension){
-        super(p_nombreCargo, p_sueldoBasico, p_anioIngreso);
+    public SemiExclusivo(String p_nombreCargo, double p_sueldoBasico, int p_anioIngreso, int p_horasInvestigacion, int p_horasDocencia){
+        super(p_nombreCargo, p_sueldoBasico, p_anioIngreso, p_horasDocencia + 10);
         this.setHorasDeInvestigacion(p_horasInvestigacion);
-        this.setHorasDeExtension(p_horasExtension);
     }
 
     /**
@@ -24,10 +22,6 @@ public class SemiExclusivo extends Cargo{
         this.horasDeInvestigacion = p_horasInvestigacion;
     }
 
-    private void setHorasDeExtension(int p_horasExtension){
-        this.horasDeExtension = p_horasExtension;
-    }
-
     /**
      * Getters
      */
@@ -35,15 +29,10 @@ public class SemiExclusivo extends Cargo{
         return this.horasDeInvestigacion;
     }
 
-    public int getHorasDeExtension(){
-        return this.horasDeExtension;
-    }
-
     public void mostrarCargo(){
         super.mostrarCargo();
-        System.out.println("--- Cargo SemiExclusivo");
+        System.out.println("--- Cargo de caracter SemiExclusivo ---");
         System.out.println("Horas investigacion: " + this.getHorasDeInvestigacion());
-        System.out.println("Horas extension: " + this.getHorasDeExtension());
     }
 
 }

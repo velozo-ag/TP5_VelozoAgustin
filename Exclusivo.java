@@ -5,14 +5,16 @@
  */
 public class Exclusivo extends Cargo{
     private int horasDeInvestigacion;
+    private int horasDeExtension;
 
     /**
      * Metodo constructor para instanciar objetos de la clase Exclusivo
-     * @param String p_nombreCargo, double p_sueldoBasico, int p_anioIngreso,int p_horasDocencia int p_horasInvestigacion
+     * @param String p_nombreCargo, double p_sueldoBasico, int p_anioIngreso, int p_horasInvestigacion, int p_horasExtension, int p_horasDocencia
      */
-    public Exclusivo(String p_nombreCargo, double p_sueldoBasico, int p_anioIngreso, int p_horasInvestigacion, int p_horasDocencia, int p_horasExtension){
+    public Exclusivo(String p_nombreCargo, double p_sueldoBasico, int p_anioIngreso, int p_horasInvestigacion, int p_horasExtension, int p_horasDocencia){
         super(p_nombreCargo, p_sueldoBasico, p_anioIngreso, p_horasDocencia);
         this.setHorasDeInvestigacion(p_horasInvestigacion);
+        this.setHorasDeExtension(p_horasExtension);
     }
 
     /**
@@ -22,6 +24,10 @@ public class Exclusivo extends Cargo{
         this.horasDeInvestigacion = p_horasInvestigacion;
     }
 
+    private void setHorasDeExtension(int p_horasExtension){
+        this.horasDeExtension = p_horasExtension;
+    }
+
     /**
      * Getters
      */
@@ -29,10 +35,15 @@ public class Exclusivo extends Cargo{
         return this.horasDeInvestigacion;
     }
 
+    public int getHorasDeExtension(){
+        return this.horasDeExtension;
+    }
+
     public void mostrarCargo(){
         super.mostrarCargo();
-        System.out.println("--- Cargo Exclusivo");
+        System.out.println("--- Cargo de caracter Exclusivo ---");
         System.out.println("Horas investigacion: " + this.getHorasDeInvestigacion());
+        System.out.println("Horas extension: " + this.getHorasDeExtension());
     }
 
 }

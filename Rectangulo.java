@@ -3,8 +3,7 @@
  * @author Velozo, Agustin
  * @version 2 04/10/2023
  */
-public class Rectangulo{
-    private Punto origen;
+public class Rectangulo extends FiguraGeometrica{
     private double ancho;
     private double alto;
     
@@ -13,7 +12,7 @@ public class Rectangulo{
      * @param Punto p_origen, double p_ancho, double p_alto
      */
     public Rectangulo(Punto p_origen, double p_ancho, double p_alto){
-        this.setOrigen(p_origen);
+        super(p_origen);
         this.setAncho(p_ancho);
         this.setAlto(p_alto);
     }
@@ -21,8 +20,6 @@ public class Rectangulo{
      * @param double p_ancho, double p_altof
      */
     public Rectangulo(double p_ancho, double p_alto){
-        Punto p1 = new Punto(0,0);
-        this.setOrigen(p1);
         this.setAncho(p_ancho);
         this.setAlto(p_alto);
     }
@@ -30,10 +27,6 @@ public class Rectangulo{
     /**
      * Setters
      */
-    private void setOrigen(Punto p_origen){
-        this.origen = p_origen;
-    }
-    
     private void setAncho(double p_ancho){
         this.ancho = p_ancho;
     }
@@ -45,10 +38,6 @@ public class Rectangulo{
     /**
      * Getters
      */
-    public Punto getOrigen(){
-        return this.origen;
-    }
-    
     public double getAncho(){
         return this.ancho;
     }

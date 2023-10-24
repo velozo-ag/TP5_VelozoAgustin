@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Comercio
+comment0.text=\r\n\ Clase\ ejecutable\ Comercio\r\n\ \r\n\ @author\ Velozo,\ Agustin\r\n\ @version\ 1\ 19/10/2023\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=ArtefactoHogar\ crearArtefacto()
+numComments=3

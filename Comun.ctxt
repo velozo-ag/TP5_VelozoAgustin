@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Comun
+comment0.text=\r\n\ Clase\ etiqueta\ Comun\r\n\ @author\ Velozo,\ Agustin\r\n\ @version\ 1\ 21/10/2023\r\n
+comment1.params=p_plus
+comment1.target=Comun(double)
+comment1.text=\r\n\ Metodo\ constructor\ para\ instanciar\ objetos\ de\ la\ clase\ Comun\r\n\ @param\ double\ p_plus\r\n
+comment2.params=p_plus
+comment2.target=void\ setPlus(double)
+comment2.text=\r\n\ Setter\r\n
+comment3.params=
+comment3.target=double\ getPlus()
+comment3.text=\r\n\ Getter\r\n
+comment4.params=q
+comment4.target=double\ precio(int)
+comment4.text=\r\n\ Calcula\ el\ precio\ de\ la\ etiqueta\ segun\ su\ tipo\ y\ cantidad\ \r\n\ @param\ q\r\n\ @return\ Devuelve\ el\ precio\ de\ la\ etiqueta\r\n
+comment5.params=q
+comment5.target=double\ descuento(int)
+comment5.text=\r\n\ Calcula\ el\ descuento\ segun\ la\ cantidad\ de\ etiquetas\r\n\ @param\ int\ q\r\n\ @return\ Devuelve\ el\ descuento\ como\ porcentaje\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Convierte\ los\ atributos\ de\ la\ etiqueta\ en\ String\r\n\ @return\ \r\n
+comment7.params=
+comment7.target=java.lang.String\ tipo()
+comment7.text=\r\n\ @return\ Devuelve\ el\ tipo\ de\ etiqueta\ (Premium\ o\ Comun)\r\n
+numComments=8

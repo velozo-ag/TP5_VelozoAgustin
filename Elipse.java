@@ -3,7 +3,7 @@
  * @author Velozo, Agustin
  * @version 1 04/10/2023
  */
-public class Elipse{
+public class Elipse extends FiguraGeometrica{
     private double sEjeMayor;
     private double sEjeMenor;
     private Punto centro;
